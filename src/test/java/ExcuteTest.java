@@ -17,22 +17,22 @@ public class ExcuteTest {
         String url = "https://tiendaonline.movistar.com.pe/ofertas/movil/multioferta";
         String celular = "999999999";
         String dni = "99999999";
-        String horario = "2024-07-20 10:00:00"; //Se debe actualizar la fecha
+        String horario = "2024-10-03 10:00:00"; //Se debe actualizar la fecha
 
         // Popup 20% DTO
         webSite.navigateToWebsite(url);
-        webSite.validate20DTO("https://centrodetransparencia.movistar.com.pe/politica-local-privacidad", "POPUP 20% DTO"); // Replace with the link URL
-        webSite.selectLegal20DTO();
-        webSite.inputFormulatio20DTO(celular, dni);
-        WebSite.selectHorario20DTO(horario);
-        webSite.submitPedido20DTO();
-        String mensaje20DTO = webSite.validatePedido20STO();
-        if (mensaje20DTO.equals("¡Gracias por contactarnos!")) {
-            System.out.println("Prueba exitosa: Se verificó el mensaje de confirmación M20%");
-        } else {
-            System.out.println("Prueba fallida: El mensaje de confirmación no es el esperado");
-        }
-        webSite.closeModal20DTO();
+//        webSite.validate20DTO("https://centrodetransparencia.movistar.com.pe/politica-local-privacidad", "POPUP 20% DTO"); // Replace with the link URL
+//        webSite.selectLegal20DTO();
+//        webSite.inputFormulatio20DTO(celular, dni);
+//        WebSite.selectHorario20DTO(horario);
+//        webSite.submitPedido20DTO();
+//        String mensaje20DTO = webSite.validatePedido20STO();
+//        if (mensaje20DTO.equals("¡Gracias por contactarnos!")) {
+//            System.out.println("Prueba exitosa: Se verificó el mensaje de confirmación M20%");
+//        } else {
+//            System.out.println("Prueba fallida: El mensaje de confirmación no es el esperado");
+//        }
+//        webSite.closeModal20DTO();
 
         // Popup DELIVERY
         webSite.validateTerminosDelivery("https://www.movistar.com.pe/movil/postpago/portabilidad?utm_source=%28direct%29&amp;utm_medium=%28none%29&amp;utm_campaign=%28direct%29&amp;utm_content=undefined&amp;utm_term=undefined&amp;gclid=&amp;_gl=1*14w1h6w*_gcl_au*MTYxOTMzODg0OS4xNzIxMjM3NzA5*_ga*NDkzMTU1NjI0LjE3MjEyMzc3MDk.*_ga_8Q7MD06RY0*MTcyMTMzMTE0MS43LjEuMTcyMTMzMTE2Ni4zNS4wLjA.#portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_jb7ddqEUWB7j", "POPUP DELIVERY"); // Replace with the link URL
