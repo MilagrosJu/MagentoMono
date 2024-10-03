@@ -9,7 +9,7 @@ public class SetUp {
 
     public static WebDriver getDriver() {
         if (driver == null) {
-            System.setProperty("webdriver.chrome.driver", "C:\\Users\\mcapcha\\IdeaProjects\\Multi_Oferta\\src\\main\\resources\\chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", "C:\\Users\\rosa_\\IdeaProjects\\MagentoMono\\src\\main\\resources\\chromedriver.exe");
             driver = new ChromeDriver();
             driver.manage().window().maximize();
         }
